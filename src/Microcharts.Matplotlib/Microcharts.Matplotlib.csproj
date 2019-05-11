@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Version>0.1.1</Version>
     <TargetFramework>netstandard1.4</TargetFramework>
-    <PackageDescription>Microcharts.Matplotlib is wrapper of Microcharts for Data Science and Machine Learning</PackageDescription>
+    <PackageDescription>Microcharts.Matplotlib is a wrapper of Microcharts for Data Science and Machine Learning</PackageDescription>
     <PackageTags>Microcharts,Data Science,Machine Learning</PackageTags>
     <RepositoryUrl>https://github.com/SciSharp/Microcharts.Matplotlib.git</RepositoryUrl>
   </PropertyGroup>
