@@ -27,7 +27,7 @@ namespace Microcharts.Extensions
 
         public static JObject Show(this Chart chart, int width = 500, int height = 300)
         {
-            var imageData = new JArray();
+            var imageData = new StringBuilder();
             
             using (var bitmap = new SKBitmap(width, height))
             using (var canvas = new SKCanvas(bitmap))
@@ -48,7 +48,7 @@ namespace Microcharts.Extensions
 
                         if (read > 0)
                         {
-                            imageData.Add(Convert.ToBase64String(buffer, 0, read) + "\n");
+                            imageData.Append(Convert.ToBase64String(buffer, 0, read));
                         }
 
                         if (read < buffer.Length)
@@ -70,26 +70,10 @@ namespace Microcharts.Extensions
                 },
                 {
                     "data", new JObject {
-                        { "image/png", imageData }
+                        { "image/png", imageData.ToString() }
                     }
                 }
             };
-
-            /* 
-
-            return new JObject
-            {
-                "metadata", new JObject {
-                    "image/png", new JObject {
-                        { "width", width },
-                        { "height", height }
-                    }
-                },
-                "data", new JObject {
-                    "image/png", imageData
-                }
-            }; 
-            */
         }
     }
 }
