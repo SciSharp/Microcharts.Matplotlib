@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D2627E01-962
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microcharts.Extensions", "src\Microcharts.Extensions\Microcharts.Extensions.csproj", "{6AD9B8BE-6C5F-4D1F-86B9-9D5D7D5DDA2C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{64B6DCF2-C5AD-46ED-BB88-6A05D213BCE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "test\Test\Test.csproj", "{E24AE249-1D65-4D35-B267-4180BB691397}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{6AD9B8BE-6C5F-4D1F-86B9-9D5D7D5DDA2C}.Release|x64.Build.0 = Release|Any CPU
 		{6AD9B8BE-6C5F-4D1F-86B9-9D5D7D5DDA2C}.Release|x86.ActiveCfg = Release|Any CPU
 		{6AD9B8BE-6C5F-4D1F-86B9-9D5D7D5DDA2C}.Release|x86.Build.0 = Release|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Debug|x64.Build.0 = Debug|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Debug|x86.Build.0 = Debug|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Release|x64.ActiveCfg = Release|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Release|x64.Build.0 = Release|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Release|x86.ActiveCfg = Release|Any CPU
+		{E24AE249-1D65-4D35-B267-4180BB691397}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6AD9B8BE-6C5F-4D1F-86B9-9D5D7D5DDA2C} = {D2627E01-962B-40D1-B815-D2F048EED765}
+		{E24AE249-1D65-4D35-B267-4180BB691397} = {64B6DCF2-C5AD-46ED-BB88-6A05D213BCE8}
 	EndGlobalSection
 EndGlobal
