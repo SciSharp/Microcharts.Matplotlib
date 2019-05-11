@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using Xunit.Abstractions;
-using Microcharts.Extensions;
+using Microcharts.Matplotlib;
 
 namespace Test
 {
