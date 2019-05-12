@@ -11,18 +11,15 @@ namespace Microcharts.Matplotlib
 {
     public static class MicrochartsBuilder
     {
-        public static BarChart CreateBarChart(IList<string> labels, IList<int> values)
+        public static Chart CreateBarChart(IList<string> labels, IList<int> values)
         {
-            if (labels.Count !=  values.Count)
-                throw new Exception($"{nameof(labels)} and {nameof(values)} have different length.");
+            var chartBuilder = new ChartBuilder<BarChart>();
+            var chart = chartBuilder
+                .Label(labels)
+                .Value(values)
+                .Build();
             
-            var entries = Enumerable.Range(0, labels.Count).Select(i =>
-                new Entry(values[i])
-                {
-                    Label = labels[i]
-                });
-
-            return new BarChart { Entries = entries };
+            return chart;
         }
 
         public static JObject Show(this Chart chart, int width = 500, int height = 300)

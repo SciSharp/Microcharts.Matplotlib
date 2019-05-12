@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Microcharts.Matplotlib
 {
-    public class ChartBuilderBase<TChart> : IChartBuilder
+    public class ChartBuilder<TChart> : IChartBuilder
         where TChart : Chart, new()
     {
         public static readonly SKColor[] DefinedColors =
@@ -55,7 +55,8 @@ namespace Microcharts.Matplotlib
                 return new Entry(values[i])
                 {
                     Label = labels[i],
-                    Color = color
+                    Color = color,
+                    ValueLabel = values[i].ToString()
                 };
             });
 

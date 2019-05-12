@@ -23,7 +23,7 @@ namespace Microcharts.Matplotlib
             return builder;
         }
 
-        public static IChartBuilder colors(this IChartBuilder builder, IList<string> colors)
+        public static IChartBuilder Colors(this IChartBuilder builder, IList<string> colors)
         {
             builder.Colors = colors;
             return builder;
